@@ -1,10 +1,15 @@
-// import React from 'react'
-// import './App.css'
+import { Flex } from "antd";
 
-import { Button } from "antd";
+import Navbar from "./navbar";
+import Content from "./content";
 
 function App() {
-	return <Button>tot</Button>;
+	return (
+		<Flex vertical gap="middle">
+			<Navbar />
+			<Content />
+		</Flex>
+	);
 }
 
 export default App;
